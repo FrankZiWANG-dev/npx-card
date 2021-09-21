@@ -1,0 +1,39 @@
+{
+  "name": "@frank/card",
+  "version": "1.0.0",
+  "description": "An npx card by Frank Zi WANG",
+  "main": "./bin/card.js",
+  "bin": {
+    "frankziwang": "./bin/card.js"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "node build.js",
+    "dev": "npm run build && node ./bin/card.js",
+    "lint": "standard",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrankZiWANG-dev/npx-card.git"
+  },
+  "files": [
+    "bin/card.js",
+    "bin/output"
+  ],
+  "keywords": [
+    "npx card",
+    "npx card"
+  ],
+  "author": "Frank Zi WANG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FrankZiWANG-dev/npx-card/issues"
+  },
+  "homepage": "https://github.com/FrankZiWANG-dev/npx-card#readme",
+  "dependencies": {
+    "boxen": "^5.1.2",
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {}
+}
